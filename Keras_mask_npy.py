@@ -26,7 +26,7 @@ for folders in glob.glob("mask/*"):
             print(os.path.join(folders,filename),"無法讀取!")
             pass
 
-print(len(images),len(labels))  # 24946 24946 
+print(len(images),len(labels))  # 4085 4085 
 
 '''
 def show_images_labels_predictions(images,labels
@@ -56,9 +56,9 @@ test_feature=np.array(test_feature)   # 串列轉為矩陣
 train_label=np.array(train_label)     # 串列轉為矩陣   
 test_label=np.array(test_label)       # 串列轉為矩陣 
 
-print(len(train_feature),len(test_feature))  # 19956 4990
-print(train_feature.shape,train_label.shape) # (19956, 80, 80, 3) (19956,)
-print(test_feature.shape,test_label.shape)   # (4990, 80, 80, 3) (4990,)
+print(len(train_feature),len(test_feature))  # 3676 409
+print(train_feature.shape,train_label.shape) # (3676, 180, 180, 3) (3676,)
+print(test_feature.shape,test_label.shape)   # (409, 180, 180, 3) (409,)
 
 imagesavepath='Cat_Dog_Dataset/'
 if not os.path.exists(imagesavepath):
